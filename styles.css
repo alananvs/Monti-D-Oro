@@ -1,0 +1,85 @@
+@import url("styles/footer.css");   
+@import url("styles/cabecalho.css");   
+
+:root {
+    --fonte-principal: "Quicksand";
+    --degrade-sul: linear-gradient(
+        150deg,
+        rgba(0, 104, 71, 1) 53%,  /* Verde */
+        rgba(200, 16, 46, 1) 12%, /* Vermelho */
+        rgba(252, 209, 22, 1) 85% /* Amarelo */
+    );
+}
+
+body {
+    background-image: url('Images/wallpaper_site.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    font-family: var(--fonte-principal);
+}
+
+h1 {
+    font-size: 24px;
+    width: 100%;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+
+@media (max-width: 991px) { /* Para dispositivos móveis */
+    .dropdown {
+        width: 100%; /* Faz o dropdown ocupar toda a largura */
+    }
+    .dropdown-menu {
+        text-align: center; /* Centraliza os itens do dropdown */
+        left: 0 !important; /* Alinha o dropdown ao lado esquerdo */
+        right: 0 !important; /* Remove qualquer desalinhamento à direita */
+        margin: auto; /* Garante centralização */
+    }
+    .dropdown-item {
+        display: block; /* Garante que cada item ocupe uma linha inteira */
+        width: 100%; /* Faz com que cada item ocupe toda a largura do dropdown */
+    }
+}
+
+@media (max-width: 767px) { /* Para dispositivos móveis menores */
+    .navbar-brand {
+        font-size: 0.9rem; /* Reduz o tamanho da fonte apenas em dispositivos móveis */
+    }
+}
+  /* Compensar altura da navbar fixa */
+.navbar-space {
+    height: 70px; /* Ajuste conforme necessário */
+}
+
+/* Ajustes para o carrossel */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+#carouselExampleCaptions {
+    margin-top: 0;
+}
+
+/* Estilos específicos para mobile */
+@media (max-width: 576px) {
+    .navbar-space {
+        height: 100px; /* Altura extra para mobile */
+    }
+
+.carousel-caption p {
+    font-size: 0.7rem; /* Ajuste o valor conforme necessário */
+}
+}

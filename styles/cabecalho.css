@@ -1,0 +1,62 @@
+.cabecalho{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.cabecalho_logo-nome{
+    display: flex;
+    gap: 1.5em;
+    padding: 1em;
+    width: 100%;
+}
+
+.cabecalho_menu{
+    justify-content: flex-end;
+    padding: 1em;
+    width: auto !important;
+    margin-right: 1.5em;
+}
+
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
+    gap: 0 1em;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 1em;
+    margin-right: 1em !important;
+}
+
+/* Estiliza os links */
+.nav-link {
+    color: #fff; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    transition: color 0.3s ease, transform 0.2s ease; /* Efeito ao passar o mouse */
+    
+  }
+  
+/* Estiliza o link ativo */
+.nav-link:active {
+    color: var(--degrade-sul); /* Define a cor do link ativo */
+    background-color: transparent; /* Garante que o fundo não seja alterado */
+    text-decoration: none; /* Remove sublinhado, se necessário */
+  }
+  
+/* Efeito hover */
+.nav-link:hover {
+    color: var(--degrade-sul); /* Cor ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o tamanho do link */
+    background: var(--degrade-sul); /* Aplica o degradê como fundo do texto */
+    -webkit-background-clip: text; /* Faz o fundo "cortar" o texto */
+    -webkit-text-fill-color: transparent; /* Torna o fundo visível no texto */
+  }
+  
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar-nav {
+        display: none;
+    }
+  }
